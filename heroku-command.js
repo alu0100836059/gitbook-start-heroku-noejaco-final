@@ -42,9 +42,8 @@ function datos_usuario(directorio){
             },{
                 name: 'repositorio'
             }], function (err, result) {
-            //
-            // Log the results.
-            //
+
+            // Informamos de los datos introducidos
             console.log('\nProcesando los siguientes datos:\n');
             console.log('\tNombre de la aplicación: ' + result.nombre_app + "\n");
             console.log('\tToken de la aplicación: ' + result.token_app + "\n");
@@ -53,11 +52,12 @@ function datos_usuario(directorio){
             //variable con el contenido de config.json
             var json = '{\n "Heroku":{\n\t"nombre_app": "'+result.nombre_app+'",\n\t "token_app": "'+result.token_app+'"\n\t}\n}';
 
+            // Creación y traspaso de los datos de configuración
             fs.mkdirSync(path.join(process.cwd(), ".token_heroku"));
             fs.writeFileSync(path.join(process.cwd(),".token_heroku","token.json"),json);
 
             var token = require(path.join(process.cwd(), ".token_heroku","token.json"));
-            var pack= require(path.join(process.cwd(), 'package.json'));
+            var pack = require(path.join(process.cwd(), 'package.json'));
 
             var her = new heroku({ token : token.Heroku.token_app });
 
