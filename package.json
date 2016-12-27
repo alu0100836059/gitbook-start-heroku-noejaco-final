@@ -1,6 +1,6 @@
 {
   "name": "gitbook-start-heroku-noejaco-final",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Plugin para el despliegue en Heroku",
   "main": "heroku-command.js",
   "scripts": {
@@ -41,11 +41,9 @@
     "gitbook-cli": "^2.3.0",
     "gulp": "^3.9.1",
     "gulp-shell": "^0.5.2",
-    "heroku-client": "^3.0.0-beta3",
     "minimist": "^1.2.0",
-    "path": "^0.12.7",
-    "prompt": "^1.0.0",
-    "simple-git": "^1.51.0"
+    "simple-git": "^1.51.0",
+    "path": "^0.12.7"
   },
   "devDependencies": {
     "child-process": "^1.0.2",
