@@ -6,7 +6,7 @@ var child = require("child_process");
 
 function initialize(directorio){
 
-    var nueva_tarea='\ngulp.task("deploy-heroku-token", function () {'+
+    var nueva_tarea='\ngulp.task("deploy-heroku", function () {'+
         '\n\tvar heroku = require("gitbook-start-heroku-noejaco-final");'+
         '\n\tvar url = paquete.repository.url;'+
         '\n\n\ heroku.deploy();'+
