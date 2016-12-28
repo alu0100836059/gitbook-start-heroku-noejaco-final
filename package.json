@@ -1,6 +1,6 @@
 {
   "name": "gitbook-start-heroku-noejaco-final",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Plugin para el despliegue en Heroku",
   "main": "heroku-command.js",
   "scripts": {

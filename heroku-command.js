@@ -14,7 +14,7 @@ function initialize(directorio){
 
 
     // Añadimos la tarea al gulpfile.js
-    fs.writeFileSync(path.resolve(process.cwd(),'gulpfile.js'), nueva_tarea,  {'flag':'a'},  function(err) {
+    fs.writeFileSync(path.resolve(process.cwd(),directorio, 'gulpfile.js'), nueva_tarea,  {'flag':'a'},  function(err) {
         if (err) {
             return console.error(err);
         }
